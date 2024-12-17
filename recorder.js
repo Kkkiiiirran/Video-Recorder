@@ -26,8 +26,6 @@ async function startVideoRecording() {
         mediaRecorder.onstop = () => {
             const blob = new Blob(mediaChunks, { type: selectedFormat });
             videoRecording.src = URL.createObjectURL(blob);
-            showing.classList.add("d-none");
-            videoRecording.classList.remove("d-none");
             format.removeAttribute("disabled");
             downloadR.classList.remove("disabled");
             startR.classList.remove("disabled");
