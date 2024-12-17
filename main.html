@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran's Video Recorder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="window">
+    <div class="container">
+        <div class="heading">
+            <img id="showing" src="./Video Recorder default.png" alt="">
+            <h1>Screen Recorder</h1>
+        </div>
+        <div class="content">
+            <video src="" id="videoRecording" class="d-none" controls></video>
+        </div>
+        <div class="format_options">
+            <select name="video-formats" id="format" disabled>
+                <option value="">Select Format</option>
+                <option value="video/webm">WebM</option>
+                <option value="video/mp4">MP4</option>
+            </select>
+        </div>
+        <div class="content_options">
+            <button class="btn disabled" id="downloadR">Download</button>
+            <button class="btn" id="startR">Start</button>
+            <button class="btn disabled" id="stopR">Stop</button>
+        </div>
+    </div>
+    </div>
+    <script src="recorder.js"></script>
+</body>
+</html>
